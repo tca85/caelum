@@ -129,4 +129,30 @@ public class CandleStickFactoryTest {
 		Assert.assertEquals(52.3, candles.get(2).getFechamento(), 0.00001);
 	}
 	//---------------------------------------------------------------------------------------------
+	/**
+	 * Exercício 5.5, página 77
+	 */
+	@Test(expected = IllegalArgumentException.class)
+	public void naoPermiteConstruirCandlesComNegociacoesForaDeOrdem(){
+        Calendar hoje = Calendar.getInstance();
+		
+		Negociacao n1 = new Negociacao(40.5, 100, hoje);
+		Negociacao n2 = new Negociacao(45.0, 100, hoje);
+		
+		Calendar amanha = (Calendar) hoje.clone();
+		amanha.add(Calendar.DAY_OF_MONTH, 1);
+		
+		Negociacao n3 = new Negociacao(48.8, 100, amanha);
+		Negociacao n4 = new Negociacao(49.3, 100, amanha);
+		
+		// data desordenada
+		List<Negociacao> negociacoes = Arrays.asList(n1, n3, n2, n4);
+		
+		CandleStickFactory fabrica = new CandleStickFactory();
+		
+		List<CandleStick> candles = fabrica.constroiCandles(negociacoes);
+		
+		//Assert.assertFalse(candles.size() == 0);
+	}	
+	//---------------------------------------------------------------------------------------------
 }

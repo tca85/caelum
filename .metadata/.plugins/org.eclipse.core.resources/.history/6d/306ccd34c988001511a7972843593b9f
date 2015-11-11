@@ -1,0 +1,10 @@
+package br.com.caelum.argentum.ws;
+
+/**
+ * 
+ * @author tca85
+ *
+ */
+public class ClienteWebService {
+
+}
