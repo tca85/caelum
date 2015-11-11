@@ -11,6 +11,7 @@ import junit.framework.Assert;
 
 public class LeitorXMLTest {
 
+	//---------------------------------------------------------------------------------------------
 	@SuppressWarnings("deprecation")
 	@Test
 	public void carregaXMLComUmaNegociacaoEmUmaListaUnitaria() {
@@ -31,8 +32,10 @@ public class LeitorXMLTest {
 		Assert.assertEquals(43.5, negociacoes.get(0).getPreco(), 0.00001);
 		Assert.assertEquals(1000, negociacoes.get(0).getQuantidade(), 0.00001);
 	}
+	//---------------------------------------------------------------------------------------------
 	
-	public void verificarCasosExcepcionais(){
-		
-	}
+//  finalizar o exercício opcional 7, página 68	
+//	public void verificarCasosExcepcionais(){
+//		
+//	}
 }

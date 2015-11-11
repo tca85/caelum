@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="NegociacaoTest" project="fj22-argentum" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="br.com.caelum.argentum.modelo.NegociacaoTest" time="0.0">
+    <testcase name="naoCriaNegociacaoComDataNula" classname="br.com.caelum.argentum.modelo.NegociacaoTest" time="0.0"/>
+    <testcase name="dataDaNegociacaoEhImutavel" classname="br.com.caelum.argentum.modelo.NegociacaoTest" time="0.0"/>
+    <testcase name="mesmoMilissegundoEhDoMesmoDia" classname="br.com.caelum.argentum.modelo.NegociacaoTest" time="0.0"/>
+    <testcase name="comHorariosDiferentesEhNoMesmoDia" classname="br.com.caelum.argentum.modelo.NegociacaoTest" time="0.0"/>
+  </testsuite>
+</testrun>
