@@ -5,9 +5,10 @@ import java.util.Calendar;
 /**
  * 
  * Apesar dos atributos serem private final, os atributos de referência podem
- * ser alterados fora da classe. O método clone() impede que isso aconteça
- * obs: é necessário implementar uma interface para que nossas classes tenham
- * esse método.
+ * ser alterados fora da classe. O método clone() impede que isso aconteça,
+ * fazendo uma "cópia defensiva" do objeto. É a única forma dele não ser alterado
+ * obs: é necessário implementar a interface Cloneable para que nossas classes tenham
+ * esse método, e também reescrever o método clone.
  * 
  * @author tca85
  *

@@ -3,7 +3,7 @@ package br.com.caelum.argentum.modelo;
 import java.util.Calendar;
 
 /**
- * Using fluent interfaces and design pattern Builder
+ * Usando interfaces fluentes e o design pattern Builder
  * 
  * @author tca85
  * 
@@ -15,7 +15,11 @@ public class CandleBuilder {
 	private double maximo;
 	private double volume;
 	private Calendar data;
-
+	
+	
+    // **********************************************************************
+	// testar melhor. Com isso é possível estabelecer que o passo2 só pode
+	// ser chamado após o passo1
 	// **********************************************************************
 	public Passo1 setAbertura(double abertura) {
 		return new Passo1(abertura);
@@ -38,37 +42,44 @@ public class CandleBuilder {
 
 	// **********************************************************************
 
+	//---------------------------------------------------------------------------------------------
 	public CandleBuilder comAbertura(double abertura) {
 		this.abertura = abertura;
 		return this;
 	}
-
+	//---------------------------------------------------------------------------------------------
 	public CandleBuilder comFechamento(double fechamento) {
 		this.fechamento = fechamento;
 		return this;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public CandleBuilder comMinimo(double minimo) {
 		this.minimo = minimo;
 		return this;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public CandleBuilder comMaximo(double maximo) {
 		this.fechamento = maximo;
 		return this;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public CandleBuilder comVolume(double volume) {
 		this.volume = volume;
 		return this;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public CandleBuilder comData(Calendar data) {
 		this.data = data;
 		return this;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public CandleStick geraCandle() {
 		return new CandleStick(abertura, fechamento, minimo, maximo, volume, data);
 	}
+	//---------------------------------------------------------------------------------------------
 }

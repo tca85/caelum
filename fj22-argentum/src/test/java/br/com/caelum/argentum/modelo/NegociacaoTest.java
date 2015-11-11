@@ -13,7 +13,6 @@ import org.junit.Test;
  *
  */
 public class NegociacaoTest {
-
 	// ---------------------------------------------------------------------------------------------
 	@SuppressWarnings("deprecation")
 	@Test
@@ -53,6 +52,9 @@ public class NegociacaoTest {
 	}
 
 	// ---------------------------------------------------------------------------------------------
+	/*
+	 * Deve aceitar datas com horários diferentes (mas com mesmo dia e mês)
+	 */
 	@SuppressWarnings("deprecation")
 	@Test
 	public void comHorariosDiferentesEhNoMesmoDia() {
@@ -65,7 +67,7 @@ public class NegociacaoTest {
 
 	// ---------------------------------------------------------------------------------------------
 	/**
-	 * Testa se é possível salvar datas iguais, só com o dia diferente
+	 * Testa se é dá erro ao salvar datas iguais, só com o dia diferente
 	 */
 	@SuppressWarnings("deprecation")
 	@Test
@@ -75,7 +77,6 @@ public class NegociacaoTest {
 
 		Negociacao negociacao = new Negociacao(40.0, 100, manha);
 		Assert.assertFalse(negociacao.isMesmoDia(tarde));
-
 	}
 	// ---------------------------------------------------------------------------------------------
 }

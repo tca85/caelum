@@ -11,6 +11,7 @@ import java.util.List;
  */
 public class TestaCandleStickFactory {
 
+	//---------------------------------------------------------------------------------------------
 	public static void main(String[] args) {
 		Calendar hoje = Calendar.getInstance();
 
@@ -26,7 +27,6 @@ public class TestaCandleStickFactory {
 		CandleStick candle = fabrica.constroiCandleParaData(hoje, negociacoes);
 
 		System.out.println(candle.toString());
-
 	}
-
+	//---------------------------------------------------------------------------------------------
 }

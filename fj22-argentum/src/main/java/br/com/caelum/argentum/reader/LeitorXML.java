@@ -9,12 +9,14 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
 /**
- * 10.11.2015
+ * Utiliza a biblioteca XStream
+ * http://xstream.codehaus.org
  * 
  * @author tca85
  *
  */
 public class LeitorXML {
+	//---------------------------------------------------------------------------------------------
 	@SuppressWarnings("unchecked")
 	public List<Negociacao> carrega(InputStream inputStream) {
 		XStream stream = new XStream(new DomDriver());
@@ -22,4 +24,5 @@ public class LeitorXML {
 		stream.alias("negociacao", Negociacao.class);
 		return (List<Negociacao>) stream.fromXML(inputStream);
 	}
+	//---------------------------------------------------------------------------------------------
 }

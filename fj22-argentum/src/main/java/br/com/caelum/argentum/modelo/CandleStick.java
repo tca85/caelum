@@ -17,8 +17,9 @@ public final class CandleStick {
 	private final double volume;
 	private final Calendar data;
 
+	//---------------------------------------------------------------------------------------------
 	/**
-	 * ctrl + 3 gcuf
+	 * ctrl + 3 gcuf -> cria o construtor com os argumentos automaticamente
 	 * 
 	 * @param abertura
 	 * @param fechamento
@@ -37,38 +38,47 @@ public final class CandleStick {
 		this.data = data;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public boolean isAlta() {
 		return this.abertura < this.fechamento;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public boolean isBaixa() {
 		return this.abertura > this.fechamento;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public double getAbertura() {
 		return abertura;
 	}
-
+	
+	//---------------------------------------------------------------------------------------------
 	public double getFechamento() {
 		return fechamento;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public double getMinimo() {
 		return minimo;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public double getMaximo() {
 		return maximo;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public double getVolume() {
 		return volume;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	public Calendar getData() {
 		return data;
 	}
 
+	//---------------------------------------------------------------------------------------------
 	@Override
 	public String toString() {
 		Calendar c = getData();
@@ -82,4 +92,5 @@ public final class CandleStick {
 				+ " Volume: " + getVolume() 
 				+ " Data: " + dataFormatada;
 	}
+	//---------------------------------------------------------------------------------------------
 }

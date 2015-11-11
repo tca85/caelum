@@ -9,6 +9,7 @@ import java.util.GregorianCalendar;
  */
 public class CandleBuilderTeste {
 
+	//---------------------------------------------------------------------------------------------
 	public static void main(String[] args) {
 		CandleStick candle = new CandleBuilder()
 		        .comAbertura(40.5)
@@ -23,4 +24,5 @@ public class CandleBuilderTeste {
 		
 		System.out.println(candle.toString());
 	}
+	//---------------------------------------------------------------------------------------------
 }

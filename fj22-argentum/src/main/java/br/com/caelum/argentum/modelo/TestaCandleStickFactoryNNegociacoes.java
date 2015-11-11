@@ -10,6 +10,7 @@ import java.util.List;
  *
  */
 public class TestaCandleStickFactoryNNegociacoes {
+	//---------------------------------------------------------------------------------------------
 	public static void main(String[] args) {
 		Calendar hoje = Calendar.getInstance();
 
@@ -25,4 +26,5 @@ public class TestaCandleStickFactoryNNegociacoes {
 
 		System.out.println(candle.toString());
 	}
+	//---------------------------------------------------------------------------------------------
 }
