@@ -35,6 +35,4 @@ public class LeitorXMLTest {
         Assert.assertEquals(negocios.get(0).getQuantidade(), 1000);
         Assert.assertEquals(negocios.size(), 1);
     }
-
 }
-
