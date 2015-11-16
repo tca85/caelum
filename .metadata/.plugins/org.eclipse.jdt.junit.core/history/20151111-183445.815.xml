@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="LeitorXMLTest" project="fj22-argentum" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="br.com.caelum.argentum.modelo.LeitorXMLTest" time="0.482">
-    <testcase name="carregaXMLComUmaNegociacaoEmUmaListaUnitaria" classname="br.com.caelum.argentum.modelo.LeitorXMLTest" time="0.482"/>
-  </testsuite>
-</testrun>

@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+/home/lab5487/workspace/caelum/.metadata/.plugins/org.eclipse.jdt.core
-1869353391.index
-2239663916.index
